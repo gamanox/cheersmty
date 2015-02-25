@@ -6,7 +6,7 @@ class CreateBeers < ActiveRecord::Migration
       t.attachment :image
       t.integer :family_id
       t.integer :style_id
-      t.number :alcohol
+      t.decimal :alcohol, precision: 3, scale: 1
       t.integer :country_id
       t.string :state
       t.string :brewery_id

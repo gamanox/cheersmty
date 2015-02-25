@@ -6,7 +6,7 @@ one:
   image: 
   family_id: 1
   style_id: 1
-  alcohol: 
+  alcohol: 9.99
   country_id: 1
   state: MyString
   brewery_id: MyString
@@ -18,7 +18,7 @@ two:
   image: 
   family_id: 1
   style_id: 1
-  alcohol: 
+  alcohol: 9.99
   country_id: 1
   state: MyString
   brewery_id: MyString

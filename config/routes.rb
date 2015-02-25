@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  resources :prices
-
   resources :beers
+
+  resources :prices
 
   resources :store_types
 
