@@ -1,0 +1,27 @@
+<h1>Listing store_types</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @store_types.each do |store_type| %>
+      <tr>
+        <td><%= store_type.name %></td>
+        <td><%= store_type.description %></td>
+        <td><%= link_to 'Show', store_type %></td>
+        <td><%= link_to 'Edit', edit_store_type_path(store_type) %></td>
+        <td><%= link_to 'Destroy', store_type, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Store type', new_store_type_path %>

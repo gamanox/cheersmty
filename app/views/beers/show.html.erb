@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @beer.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @beer.description %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @beer.image %>
+</p>
+
+<p>
+  <strong>Family:</strong>
+  <%= @beer.family_id %>
+</p>
+
+<p>
+  <strong>Style:</strong>
+  <%= @beer.style_id %>
+</p>
+
+<p>
+  <strong>Alcohol:</strong>
+  <%= @beer.alcohol %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @beer.country_id %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @beer.state %>
+</p>
+
+<p>
+  <strong>Brewery:</strong>
+  <%= @beer.brewery_id %>
+</p>
+
+<p>
+  <strong>Rating:</strong>
+  <%= @beer.rating %>
+</p>
+
+<%= link_to 'Edit', edit_beer_path(@beer) %> |
+<%= link_to 'Back', beers_path %>

@@ -1,9 +1,33 @@
 Rails.application.routes.draw do
+  resources :prices
+
+  resources :beers
+
+  resources :store_types
+
+  resources :stores
+
+  get 'home/index'
+
+  resources :styles, only: [:show, :index]
+
+  resources :families, only: [:show, :index]
+
+  resources :stores, only: [:show, :index]
+
+  resources :breweries, only: [:show, :index]
+
+  resources :beers, only: [:show, :index]
+
+  resources :locations, only: [:show, :index]
+
+  resources :countries, only: [:show, :index]
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+   root 'home#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
